@@ -2,7 +2,7 @@
 
 ### Objective
 
-In this project, our main goal will be to understand the fundamentals of a double linked-list and its operations.
+In this project, our main goal will be to understand the fundamentals of a double linked list and its operations.
 
 ### Concepts
 
@@ -33,6 +33,8 @@ public class Main {
 
         list.displayList();
     }
+}
+
 public class Node {
     public int data;
     public Node previous;
@@ -55,15 +57,15 @@ public class DoublyLinkedList {
     }
 
     public void insertAtEnd(int data) {
-        Node newNode = new Node(data);
+        Node value = new Node(data);
 
         if (head == null) {
-            head = newNode;
-            tail = newNode;
+            head = value;
+            tail = value;
         } else {
-            tail.next = newNode;
-            newNode.previous = tail;
-            tail = newNode;
+            tail.next = value;
+            value.previous = tail;
+            tail = value;
         }
     }
 
@@ -77,6 +79,7 @@ public class DoublyLinkedList {
         System.out.println();
     }
 
-/* your code here */
-} }
+    /* your code here */
+
+}
 ```

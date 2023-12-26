@@ -8,7 +8,11 @@ public class Main {
         list.insertAtEnd(40);
 
         list.displayList();
-    }}
+        
+        /* call the method */
+    }
+}
+
 public class Node {
     public int data;
     public Node previous;
@@ -31,15 +35,15 @@ public class DoublyLinkedList {
     }
 
     public void insertAtEnd(int data) {
-        Node newNode = new Node(data);
+        Node value = new Node(data);
 
         if (head == null) {
-            head = newNode;
-            tail = newNode;
+            head = value;
+            tail = value;
         } else {
-            tail.next = newNode;
-            newNode.previous = tail;
-            tail = newNode;
+            tail.next = value;
+            value.previous = tail;
+            tail = value;
         }
     }
 
@@ -53,5 +57,6 @@ public class DoublyLinkedList {
         System.out.println();
     }
 
-/* your code here */
-} 
+    /* your code here */
+
+}

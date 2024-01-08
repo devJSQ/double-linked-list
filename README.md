@@ -29,7 +29,7 @@ public class DoublyLinkedList {
         this.tail = null;
     }
 
-    public void insertAtEnd(int data) {
+    public void insert(int data) {
         Node value = new Node(data);
 
         if (head == null) {

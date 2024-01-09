@@ -2,10 +2,10 @@ public class Main {
     public static void main(String[] args) {
         DoublyLinkedList list = new DoublyLinkedList();
 
-        list.insertAtEnd(10);
-        list.insertAtEnd(20);
-        list.insertAtEnd(30);
-        list.insertAtEnd(40);
+        list.insert(10);
+        list.insert(20);
+        list.insert(30);
+        list.insert(40);
 
         list.displayList();
         

@@ -19,6 +19,16 @@ public class DoublyLinkedList {
             tail = value;
         }
     }
+     public void displayList() {
+        Node current = head;
+
+        System.out.println("Elements in the list:");
+
+        while (current != null) {
+            System.out.println(current.data);
+            current = current.next;
+        }
+    }
 
     /* your code here */
 

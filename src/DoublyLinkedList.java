@@ -30,6 +30,24 @@ public class DoublyLinkedList {
         }
     }
 
-    /* your code here */
+    public void deleteNode(int value){
+        if(head == null){
+            System.out.println("list is empty");
+            return;
+        }
+        Node current = head;
+        while (current != null){
+            if(current.data == value){
+                if(current.previous == null){
+                    head = current.next;
+                } else{
+                   current.previous.next = current.next;
+                } if(current.next != null){
+                    current.next.previous = current.previous;
+                } return;
+            } current = current.next;
+        }
+
+    }
 
 }
